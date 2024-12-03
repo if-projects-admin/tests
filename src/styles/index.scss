@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts/index.scss';
+
+html {
+  scroll-behavior: smooth;
+
+  @media (resolution: 144dpi) {
+    font-size: 80%;
+  }
+
+  @media (resolution: 108dpi) {
+    font-size: 80%;
+  }
+}
+
+* {
+  color: #334155;
+  font-family: 'iFood RC Textos', sans-serif !important;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+// Libs
+@import 'animate.css';
+@import 'react-toastify/dist/ReactToastify.min.css';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+@import 'plyr-react/plyr.css';
+
+.plyrVideoPlayer {
+  --plyr-color-main: #3b82f6;
+  --plyr-font-smoothing: true;
+  --plyr-tooltip-padding: 50px !important;
+  --plyr-tooltip-color: white;
+  --plyr-tooltip-background: transparent;
+  --plyr-font-size-small: 14px;
+  --plyr-tooltip-shadow: 0px;
+}
+
+.white-icon * {
+  color: white;
+}
+
+.red-icon * {
+  color: #ef4444
+}
+
+.slate-icon * {
+  color: #475569
+}
+
+.blue-icon * {
+  color: #3b82f6
+}
+
+.indigo-icon * {
+  color: #6366f1
+}
+
+// Components
+@import "./components/circle-button.scss";
+@import "./components/success-feedback.scss";
